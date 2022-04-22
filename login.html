@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - LSP Digital ID</title>
+    <meta name="description" content="Implementasi halaman login menggunakan captcha" />
+    <link rel="stylesheet" href="css/login-daftar.css" />
+    <!-- library fontawesome -->
+    <script src="https://kit.fontawesome.com/ae39854731.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="login-form">
+        <div class="form-title">LOGIN</div>
+        <div class="form-input">
+            <label for="username">Username</label>
+            <input type="text" id="username" />
+        </div>
+        <div class="form-input">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+        </div>
+        <div class="captcha">
+            <label for="captcha-input">Masukan Captcha</label>
+            <div class="preview"></div>
+            <div class="captcha-form">
+                <input type="text" id="captcha-form" placeholder="Masukan captcha"/>
+                <button class="captcha-refresh">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </button>
+            </div>
+        </div>
+        <div class="form-input">
+            <button id="login-btn">Login</button>
+        </div>
+
+        <div class="form-input">
+            <a href="index.html">Kembali ke menu home</a>
+        </div>
+    </div>
+    <script src="js/captcha.js"></script>
+</body>
+
+</html>
